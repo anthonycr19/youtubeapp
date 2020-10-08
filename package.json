@@ -13,8 +13,7 @@
     "build:ssr": "ng build --prod && ng run youtubeApp:server:production",
     "prerender": "ng run youtubeApp:prerender",
     "start:heroku": "node dist/server",
-    "postinstall": "npm run build:ssr",
-    "heroku-postbuild": "bg build --prod"
+    "postinstall": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
