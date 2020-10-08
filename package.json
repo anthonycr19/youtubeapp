@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -13,7 +13,8 @@
     "build:ssr": "ng build --prod && ng run youtubeApp:server:production",
     "prerender": "ng run youtubeApp:prerender",
     "start:heroku": "node dist/server",
-    "postinstall": "npm run build:ssr"
+    "postinstall": "npm run build:ssr",
+    "heroku-postbuild": "bg build --prod"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +28,8 @@
     "@angular/platform-server": "~9.1.4",
     "@angular/router": "~9.1.4",
     "@nguniversal/express-engine": "^9.1.1",
-    "express": "^4.15.2",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "sweetalert2": "^9.17.1",
     "tslib": "^1.10.0",
@@ -35,14 +37,14 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.4",
-    "@angular/cli": "~9.1.4",
-    "@angular/compiler-cli": "~9.1.4",
+    "@angular/cli": "^10.1.6",
+    "@angular/compiler-cli": "^9.1.12",
     "@angular/language-service": "~9.1.4",
     "@nguniversal/builders": "^9.1.1",
     "@types/express": "^4.17.0",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
