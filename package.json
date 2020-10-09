@@ -9,13 +9,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lite": "lite-server",
-    "postinstall": "ng build --output-path youtubeapp --aot --prod"
+    "postinstall": "ng build --output-path 13. youtubeapp --aot --prod"
   },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~0.901.4",
     "@angular/animations": "~9.1.4",
-    "@angular/cli": "^10.0.0",
+    "@angular/cli": "^10.1.6",
     "@angular/common": "~9.1.4",
     "@angular/compiler": "~9.1.4",
     "@angular/compiler-cli": "^9.1.12",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.4",
-    "@angular/cli": "^10.0.0",
+    "@angular/cli": "^10.1.6",
     "@angular/compiler-cli": "^9.1.12",
     "@angular/language-service": "~9.1.4",
     "@nguniversal/builders": "^9.1.1",
